@@ -1,0 +1,83 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+{% block css %}
+<link href="{% static 'app/css/lista-productos.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contenido %}
+
+
+
+<!--cards-->
+
+<div class="card-deck">
+    <div class="card">
+      <img src="{% static 'app/img/imgcard1.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+       <a href="../Semestral-Proyecto/venta-compra1.html"> <h5 class="card-title text-warning">Titulo obra de arte</h5></a>
+        <h6>precio: $100.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This is  a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'app/img/imgcard2.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Titulo obra de arte</h5>
+        <h6>Precio: $500.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'app/img/imgcard3.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Titulo obra de arte</h5>
+        <h6>Precio: $250.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <img src="{% static 'app/img/imgcard7.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Titulo obra de arte</h5>
+        <h6>Precio: $100.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'app/img/imgcard4.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Titulo obra de arte</h5>
+        <h6>Precio: $500.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>' %}
+    <div class="card">
+      <img src="{% static 'app/img/imgcard9.jpg' %}" class="card-img-top embed-responsive-item" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Titulo obra de arte</h5>
+        <h6>Precio: $250.000</h6> <br>
+        <h6>ARTISTA</h6>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
