@@ -8,3 +8,5 @@ def contacto(request):
     return render(request, 'app/contacto.html' )
 def lista_productos(request):
     return render(request, 'app/lista_productos.html' )
+def login(request):
+    return render(request, 'app/login.html' )
