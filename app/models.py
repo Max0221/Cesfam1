@@ -13,6 +13,7 @@ class medicamento(models.Model):
 
 class fichapaciente(models.Model):
     nombre = models.CharField(max_length=50)
+    imagen = models.ImageField(upload_to="perfil", null=True)
     rut = models.CharField(max_length=10)
     email = models.CharField(max_length=50)
     numero = models.IntegerField()
