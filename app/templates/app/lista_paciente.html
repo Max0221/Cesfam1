@@ -1,0 +1,45 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+{% block css %}
+<link href="{% static 'app/css/lista-productos.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contenido %}
+
+
+
+<body>
+    
+
+
+      <!--cards-->
+      {% for p in fichapacientes %}
+      <div class="card-deck">
+        
+          <div class="card">
+            {% if p.imagen %}
+             <img src="{{ p.imagen.url }}"  alt="imagen producto">
+            {% endif %}
+            <div class="card-body">
+             
+              <h6>{{p.nombre}}</h6> 
+              <h5>{{ p.rut }}</h5>
+              <h5>{{p.email}}</h5>
+              <h5>{{p.numero}}</h5>
+              <p class="card-text">{{p.descripciom}}</p>
+              <p class="card-text"><small class="text-muted">{{p.medicamento}}</small></p>
+            </div>
+           
+          </div>
+          {% endfor %}
+         
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      
+      
+    
+</body>
+</html>
+
+{% endblock %}
