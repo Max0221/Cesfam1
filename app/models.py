@@ -3,6 +3,7 @@ from django.forms import BooleanField, EmailField
 
 # Create your models here.
 class medicamento(models.Model):
+    imagen = models.ImageField(upload_to="medicamentos", null=True)
     nombre = models.CharField(max_length=50)
     stock = models.IntegerField()
     fecha_fabricacion = models.DateField()
@@ -24,6 +25,7 @@ class fichapaciente(models.Model):
         return self.nombre
 
 class medicamentocompra(models.Model):
+    imagen = models.ImageField(upload_to="listacompra", null=True)
     nombre = models.CharField(max_length=50)
     precio = models.IntegerField()
 

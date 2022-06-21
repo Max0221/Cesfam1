@@ -13,8 +13,8 @@
 <!--cards-->
 <body>
 
-<title>Lista de git Medicamentos</title>
-{% for p in medicamentoscompra %}
+<title>Lista Medicamentos</title>
+{% for p in medicamentos %}
   <div class="container">
     
    
@@ -24,7 +24,9 @@
       {% endif %}
       <div class="detalle">
         <h5>{{ p.nombre | capfirst | title }}</h5>
-        <h3>${{ p.precio |intcomma }}</h3>
+        <h3>{{ p.stock |intcomma }}</h3>
+        <h3>{{ p.fecha_fabricacion}}</h3>
+        <h3>{{ p.caducado }}</h3>
       </div>
      </div>
 
